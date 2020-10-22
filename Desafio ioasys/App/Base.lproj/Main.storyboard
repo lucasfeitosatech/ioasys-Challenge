@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Desafio_ioasys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5y-fQ-bT8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="313.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_mask" translatesAutoresizingMaskIntoConstraints="NO" id="xql-8p-8yw">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="313.5"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_short" translatesAutoresizingMaskIntoConstraints="NO" id="ttJ-X5-ddL">
+                                        <rect key="frame" x="187" y="131" width="40" height="32"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seja bem vindo ao empresas!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipX-T8-Nj6">
+                                        <rect key="frame" x="20" y="178" width="374" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" red="0.94499540329999998" green="0.94515722989999995" blue="0.94498521089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xql-8p-8yw" secondAttribute="bottom" id="Cgr-Yh-FyY"/>
+                                    <constraint firstItem="ttJ-X5-ddL" firstAttribute="centerX" secondItem="G5y-fQ-bT8" secondAttribute="centerX" id="FUP-2s-OYU"/>
+                                    <constraint firstAttribute="trailing" secondItem="xql-8p-8yw" secondAttribute="trailing" id="NjU-vj-j1R"/>
+                                    <constraint firstAttribute="trailing" secondItem="ipX-T8-Nj6" secondAttribute="trailing" constant="20" id="O0q-nj-zaW"/>
+                                    <constraint firstItem="ttJ-X5-ddL" firstAttribute="centerY" secondItem="G5y-fQ-bT8" secondAttribute="centerY" constant="-10" id="PEY-vo-3eA"/>
+                                    <constraint firstItem="ipX-T8-Nj6" firstAttribute="top" secondItem="ttJ-X5-ddL" secondAttribute="bottom" constant="15" id="W0r-zq-Xmw"/>
+                                    <constraint firstItem="ipX-T8-Nj6" firstAttribute="leading" secondItem="G5y-fQ-bT8" secondAttribute="leading" constant="20" id="XGA-Js-Ahf"/>
+                                    <constraint firstItem="xql-8p-8yw" firstAttribute="top" secondItem="G5y-fQ-bT8" secondAttribute="top" id="oFu-CQ-gyA"/>
+                                    <constraint firstItem="xql-8p-8yw" firstAttribute="leading" secondItem="G5y-fQ-bT8" secondAttribute="leading" id="vW1-uo-QPy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JbD-el-fV1" customClass="CustomTextField" customModule="Desafio_ioasys" customModuleProvider="target">
+                                <rect key="frame" x="20" y="343.5" width="374" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="986-Tf-DzH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="leI-Me-dcR" customClass="CustomTextField" customModule="Desafio_ioasys" customModuleProvider="target">
+                                <rect key="frame" x="20" y="443.5" width="374" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="JhK-wd-Wac"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLT-fe-vHj" customClass="CustomButton" customModule="Desafio_ioasys" customModuleProvider="target">
+                                <rect key="frame" x="20" y="543.5" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LK0-nZ-j6Z"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5GF-Pv-qto"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="leI-Me-dcR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0Ja-wH-0gS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nLT-fe-vHj" secondAttribute="trailing" constant="20" id="1au-dL-wA9"/>
+                            <constraint firstItem="JbD-el-fV1" firstAttribute="top" secondItem="G5y-fQ-bT8" secondAttribute="bottom" constant="30" id="6hJ-5L-Ov6"/>
+                            <constraint firstItem="G5y-fQ-bT8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.35" id="7OL-Q8-ukF"/>
+                            <constraint firstItem="G5y-fQ-bT8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9LW-UJ-jAW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JbD-el-fV1" secondAttribute="trailing" constant="20" id="Dju-Mc-Rhv"/>
+                            <constraint firstItem="G5y-fQ-bT8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Km1-gx-JNK"/>
+                            <constraint firstItem="nLT-fe-vHj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OE4-of-Auy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="leI-Me-dcR" secondAttribute="trailing" constant="20" id="Q4V-6a-J7w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G5y-fQ-bT8" secondAttribute="trailing" id="d2a-7e-dAD"/>
+                            <constraint firstItem="JbD-el-fV1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kCW-Yx-905"/>
+                            <constraint firstItem="nLT-fe-vHj" firstAttribute="top" secondItem="leI-Me-dcR" secondAttribute="bottom" constant="20" id="qbh-MQ-gDa"/>
+                            <constraint firstItem="leI-Me-dcR" firstAttribute="top" secondItem="JbD-el-fV1" secondAttribute="bottom" constant="20" id="vim-mU-K8I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="JbD-el-fV1" id="n1Y-6A-cKf"/>
+                        <outlet property="loginButton" destination="nLT-fe-vHj" id="N1V-9U-epU"/>
+                        <outlet property="password" destination="leI-Me-dcR" id="iCU-2J-7gu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="99"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login_mask" width="374" height="233.5"/>
+        <image name="logo_short" width="40" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

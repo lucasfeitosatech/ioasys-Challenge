@@ -3,18 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A41AD2092541053200522839 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41AD2082541053200522839 /* Color.swift */; };
+		A41AD20E2541057900522839 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41AD20D2541057900522839 /* UIColorExtension.swift */; };
+		A41AD217254106FE00522839 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41AD216254106FE00522839 /* Loader.swift */; };
+		A41AD21C25410D7B00522839 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41AD21B25410D7B00522839 /* CustomButton.swift */; };
+		A41AD22625410FE700522839 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41AD22525410FE700522839 /* LoginViewController.swift */; };
+		A41AD22C254110B700522839 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41AD22B254110B700522839 /* Helper.swift */; };
+		A41AD2352541179300522839 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A41AD2342541179300522839 /* Alamofire */; };
+		A41AD23B254117B000522839 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41AD23A254117B000522839 /* APIManager.swift */; };
+		A41AD24D25411DC400522839 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41AD24C25411DC400522839 /* UserManager.swift */; };
 		A4C3A3602540E1FB00DB6541 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A35F2540E1FB00DB6541 /* AppDelegate.swift */; };
 		A4C3A3622540E1FB00DB6541 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A3612540E1FB00DB6541 /* SceneDelegate.swift */; };
-		A4C3A3642540E1FB00DB6541 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A3632540E1FB00DB6541 /* ViewController.swift */; };
 		A4C3A3672540E1FB00DB6541 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C3A3652540E1FB00DB6541 /* Main.storyboard */; };
 		A4C3A3692540E20000DB6541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C3A3682540E20000DB6541 /* Assets.xcassets */; };
 		A4C3A36C2540E20000DB6541 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C3A36A2540E20000DB6541 /* LaunchScreen.storyboard */; };
 		A4C3A3772540E20000DB6541 /* Desafio_ioasysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A3762540E20000DB6541 /* Desafio_ioasysTests.swift */; };
 		A4C3A3822540E20100DB6541 /* Desafio_ioasysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A3812540E20100DB6541 /* Desafio_ioasysUITests.swift */; };
+		A4C3A3972540F69300DB6541 /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4C3A3962540F69300DB6541 /* CustomTextField.xib */; };
+		A4C3A39C2540F84B00DB6541 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A39B2540F84B00DB6541 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +45,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A41AD2082541053200522839 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A41AD20D2541057900522839 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		A41AD216254106FE00522839 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		A41AD21B25410D7B00522839 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		A41AD22525410FE700522839 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A41AD22B254110B700522839 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		A41AD23A254117B000522839 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A41AD24C25411DC400522839 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		A4C3A35C2540E1FB00DB6541 /* Desafio ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio ioasys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C3A35F2540E1FB00DB6541 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4C3A3612540E1FB00DB6541 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A4C3A3632540E1FB00DB6541 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A4C3A3662540E1FB00DB6541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4C3A3682540E20000DB6541 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4C3A36B2540E20000DB6541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +66,8 @@
 		A4C3A37D2540E20100DB6541 /* Desafio ioasysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Desafio ioasysUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C3A3812540E20100DB6541 /* Desafio_ioasysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio_ioasysUITests.swift; sourceTree = "<group>"; };
 		A4C3A3832540E20100DB6541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C3A3962540F69300DB6541 /* CustomTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
+		A4C3A39B2540F84B00DB6541 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41AD2352541179300522839 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +96,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A41AD207254104FA00522839 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A41AD2082541053200522839 /* Color.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A41AD2122541058000522839 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A41AD20D2541057900522839 /* UIColorExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A41AD22025410FB900522839 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A41AD22125410FC300522839 /* Login */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A41AD22125410FC300522839 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A4C3A3652540E1FB00DB6541 /* Main.storyboard */,
+				A41AD22525410FE700522839 /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		A41AD22A254110AB00522839 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				A41AD22B254110B700522839 /* Helper.swift */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		A41AD239254117A100522839 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A41AD23A254117B000522839 /* APIManager.swift */,
+				A41AD24C25411DC400522839 /* UserManager.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		A4C3A3532540E1FB00DB6541 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +169,14 @@
 		A4C3A35E2540E1FB00DB6541 /* Desafio ioasys */ = {
 			isa = PBXGroup;
 			children = (
+				A41AD239254117A100522839 /* Util */,
+				A41AD22A254110AB00522839 /* General */,
+				A41AD22025410FB900522839 /* App */,
+				A41AD2122541058000522839 /* Extensions */,
+				A41AD207254104FA00522839 /* Constants */,
+				A4C3A3922540F66300DB6541 /* Custom Views */,
 				A4C3A35F2540E1FB00DB6541 /* AppDelegate.swift */,
 				A4C3A3612540E1FB00DB6541 /* SceneDelegate.swift */,
-				A4C3A3632540E1FB00DB6541 /* ViewController.swift */,
-				A4C3A3652540E1FB00DB6541 /* Main.storyboard */,
 				A4C3A3682540E20000DB6541 /* Assets.xcassets */,
 				A4C3A36A2540E20000DB6541 /* LaunchScreen.storyboard */,
 				A4C3A36D2540E20000DB6541 /* Info.plist */,
@@ -128,6 +202,17 @@
 			path = "Desafio ioasysUITests";
 			sourceTree = "<group>";
 		};
+		A4C3A3922540F66300DB6541 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				A4C3A3962540F69300DB6541 /* CustomTextField.xib */,
+				A4C3A39B2540F84B00DB6541 /* CustomTextField.swift */,
+				A41AD216254106FE00522839 /* Loader.swift */,
+				A41AD21B25410D7B00522839 /* CustomButton.swift */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +229,9 @@
 			dependencies = (
 			);
 			name = "Desafio ioasys";
+			packageProductDependencies = (
+				A41AD2342541179300522839 /* Alamofire */,
+			);
 			productName = "Desafio ioasys";
 			productReference = A4C3A35C2540E1FB00DB6541 /* Desafio ioasys.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +303,9 @@
 				Base,
 			);
 			mainGroup = A4C3A3532540E1FB00DB6541;
+			packageReferences = (
+				A41AD2332541179300522839 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = A4C3A35D2540E1FB00DB6541 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C3A3972540F69300DB6541 /* CustomTextField.xib in Resources */,
 				A4C3A36C2540E20000DB6541 /* LaunchScreen.storyboard in Resources */,
 				A4C3A3692540E20000DB6541 /* Assets.xcassets in Resources */,
 				A4C3A3672540E1FB00DB6541 /* Main.storyboard in Resources */,
@@ -258,9 +350,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4C3A3642540E1FB00DB6541 /* ViewController.swift in Sources */,
+				A4C3A39C2540F84B00DB6541 /* CustomTextField.swift in Sources */,
 				A4C3A3602540E1FB00DB6541 /* AppDelegate.swift in Sources */,
+				A41AD23B254117B000522839 /* APIManager.swift in Sources */,
+				A41AD2092541053200522839 /* Color.swift in Sources */,
+				A41AD21C25410D7B00522839 /* CustomButton.swift in Sources */,
+				A41AD22625410FE700522839 /* LoginViewController.swift in Sources */,
+				A41AD22C254110B700522839 /* Helper.swift in Sources */,
 				A4C3A3622540E1FB00DB6541 /* SceneDelegate.swift in Sources */,
+				A41AD217254106FE00522839 /* Loader.swift in Sources */,
+				A41AD24D25411DC400522839 /* UserManager.swift in Sources */,
+				A41AD20E2541057900522839 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +687,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A41AD2332541179300522839 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A41AD2342541179300522839 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A41AD2332541179300522839 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A4C3A3542540E1FB00DB6541 /* Project object */;
 }

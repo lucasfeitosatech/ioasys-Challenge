@@ -6,9 +6,12 @@
 //
 
 import Foundation
+import UIKit
 
-class TIColor {
+class Color {
     
-    static let ERROR_COLOR = 
+    static let ERROR_COLOR = UIColor(hexString: "#E00000")
+    static let TEXT_COLOR = UIColor(hexString: "#666666")
+    static let BUTTON_COLOR = UIColor(hexString: "#E01E69")
     
 }
