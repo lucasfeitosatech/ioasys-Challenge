@@ -16,6 +16,12 @@
 		A41AD2352541179300522839 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A41AD2342541179300522839 /* Alamofire */; };
 		A41AD23B254117B000522839 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41AD23A254117B000522839 /* APIManager.swift */; };
 		A41AD24D25411DC400522839 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41AD24C25411DC400522839 /* UserManager.swift */; };
+		A41AD259254214E200522839 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41AD258254214E100522839 /* MasterViewController.swift */; };
+		A41AD261254214F400522839 /* Master.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41AD260254214F400522839 /* Master.storyboard */; };
+		A41AD2692542182300522839 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41AD2682542182300522839 /* SearchView.swift */; };
+		A41AD26E254252FB00522839 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41AD26D254252FB00522839 /* CustomTableViewCell.swift */; };
+		A41AD274254255E900522839 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41AD273254255E900522839 /* DetailViewController.swift */; };
+		A41AD27C254255FF00522839 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41AD27B254255FF00522839 /* Detail.storyboard */; };
 		A4C3A3602540E1FB00DB6541 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A35F2540E1FB00DB6541 /* AppDelegate.swift */; };
 		A4C3A3622540E1FB00DB6541 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C3A3612540E1FB00DB6541 /* SceneDelegate.swift */; };
 		A4C3A3672540E1FB00DB6541 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C3A3652540E1FB00DB6541 /* Main.storyboard */; };
@@ -53,6 +59,12 @@
 		A41AD22B254110B700522839 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		A41AD23A254117B000522839 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		A41AD24C25411DC400522839 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		A41AD258254214E100522839 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		A41AD260254214F400522839 /* Master.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Master.storyboard; sourceTree = "<group>"; };
+		A41AD2682542182300522839 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		A41AD26D254252FB00522839 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		A41AD273254255E900522839 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A41AD27B254255FF00522839 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		A4C3A35C2540E1FB00DB6541 /* Desafio ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio ioasys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C3A35F2540E1FB00DB6541 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4C3A3612540E1FB00DB6541 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +127,8 @@
 		A41AD22025410FB900522839 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A41AD272254255C000522839 /* Detail */,
+				A41AD257254214CA00522839 /* Master */,
 				A41AD22125410FC300522839 /* Login */,
 			);
 			path = App;
@@ -144,6 +158,24 @@
 				A41AD24C25411DC400522839 /* UserManager.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		A41AD257254214CA00522839 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				A41AD258254214E100522839 /* MasterViewController.swift */,
+				A41AD260254214F400522839 /* Master.storyboard */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+		A41AD272254255C000522839 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A41AD273254255E900522839 /* DetailViewController.swift */,
+				A41AD27B254255FF00522839 /* Detail.storyboard */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 		A4C3A3532540E1FB00DB6541 = {
@@ -209,6 +241,8 @@
 				A4C3A39B2540F84B00DB6541 /* CustomTextField.swift */,
 				A41AD216254106FE00522839 /* Loader.swift */,
 				A41AD21B25410D7B00522839 /* CustomButton.swift */,
+				A41AD2682542182300522839 /* SearchView.swift */,
+				A41AD26D254252FB00522839 /* CustomTableViewCell.swift */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -325,7 +359,9 @@
 				A4C3A3972540F69300DB6541 /* CustomTextField.xib in Resources */,
 				A4C3A36C2540E20000DB6541 /* LaunchScreen.storyboard in Resources */,
 				A4C3A3692540E20000DB6541 /* Assets.xcassets in Resources */,
+				A41AD261254214F400522839 /* Master.storyboard in Resources */,
 				A4C3A3672540E1FB00DB6541 /* Main.storyboard in Resources */,
+				A41AD27C254255FF00522839 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +394,11 @@
 				A41AD22625410FE700522839 /* LoginViewController.swift in Sources */,
 				A41AD22C254110B700522839 /* Helper.swift in Sources */,
 				A4C3A3622540E1FB00DB6541 /* SceneDelegate.swift in Sources */,
+				A41AD2692542182300522839 /* SearchView.swift in Sources */,
+				A41AD259254214E200522839 /* MasterViewController.swift in Sources */,
+				A41AD26E254252FB00522839 /* CustomTableViewCell.swift in Sources */,
 				A41AD217254106FE00522839 /* Loader.swift in Sources */,
+				A41AD274254255E900522839 /* DetailViewController.swift in Sources */,
 				A41AD24D25411DC400522839 /* UserManager.swift in Sources */,
 				A41AD20E2541057900522839 /* UIColorExtension.swift in Sources */,
 			);

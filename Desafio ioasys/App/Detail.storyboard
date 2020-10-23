@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6gW-Bd-F3d">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="BzX-8w-l8N">
+            <objects>
+                <viewController id="6gW-Bd-F3d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KQQ-ad-f8U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdE-pr-Snx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gh.png" translatesAutoresizingMaskIntoConstraints="NO" id="gxx-dy-wg0">
+                                        <rect key="frame" x="182" y="50" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="KMO-qC-lxU"/>
+                                            <constraint firstAttribute="width" constant="50" id="fCy-bu-eIn"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstItem="gxx-dy-wg0" firstAttribute="centerX" secondItem="xdE-pr-Snx" secondAttribute="centerX" id="iHl-Od-UAP"/>
+                                    <constraint firstAttribute="height" constant="150" id="rO7-Th-3a1"/>
+                                    <constraint firstItem="gxx-dy-wg0" firstAttribute="centerY" secondItem="xdE-pr-Snx" secondAttribute="centerY" id="tC6-og-f2Y"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XQd-wR-ZnT">
+                                <rect key="frame" x="20" y="204" width="374" height="638"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H5V-F4-7e1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="H5V-F4-7e1" firstAttribute="trailing" secondItem="xdE-pr-Snx" secondAttribute="trailing" id="9lf-KT-89L"/>
+                            <constraint firstItem="XQd-wR-ZnT" firstAttribute="leading" secondItem="H5V-F4-7e1" secondAttribute="leading" constant="20" id="J66-RE-p5f"/>
+                            <constraint firstItem="xdE-pr-Snx" firstAttribute="top" secondItem="H5V-F4-7e1" secondAttribute="top" id="Ntd-Ki-RCO"/>
+                            <constraint firstItem="H5V-F4-7e1" firstAttribute="trailing" secondItem="XQd-wR-ZnT" secondAttribute="trailing" constant="20" id="NzG-xc-hEa"/>
+                            <constraint firstItem="H5V-F4-7e1" firstAttribute="bottom" secondItem="XQd-wR-ZnT" secondAttribute="bottom" constant="20" id="UR4-c4-U6D"/>
+                            <constraint firstItem="xdE-pr-Snx" firstAttribute="leading" secondItem="H5V-F4-7e1" secondAttribute="leading" id="chO-oc-Ys5"/>
+                            <constraint firstItem="XQd-wR-ZnT" firstAttribute="top" secondItem="xdE-pr-Snx" secondAttribute="bottom" constant="10" id="y9B-j1-Nq1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y8L-ju-HZn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="91"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gh.png" width="32" height="32"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

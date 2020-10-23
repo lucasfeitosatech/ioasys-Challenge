@@ -70,8 +70,9 @@ class LoginViewController: UIViewController {
             ]
             APIManager.shared().authenticate(body: body) { sucess in
                 
-                    if !sucess {
-                        print("Deu erro")
+                    if sucess {
+                        //print("Deu erro")
+                        self.performSegue(withIdentifier: "masterSegue", sender: self)
                     }
                 self.loader.dismiss()
                 
@@ -80,6 +81,16 @@ class LoginViewController: UIViewController {
         
 
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     /*
     // MARK: - Navigation

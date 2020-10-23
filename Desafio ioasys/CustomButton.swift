@@ -7,6 +7,7 @@
 
 import UIKit
 
+@IBDesignable
 class CustomButton: UIButton {
 
     /*
@@ -23,7 +24,7 @@ class CustomButton: UIButton {
     }
     
     override class func prepareForInterfaceBuilder() {
-        super.init()
+        //super.init()
         //initButton()
     }
     

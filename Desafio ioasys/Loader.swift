@@ -11,7 +11,7 @@ import UIKit
 
 class Loader: UIView {
     
-    
+    var isShowing:Bool = false
     var spinner:UIActivityIndicatorView!
     
     let label:UILabel = {
@@ -40,12 +40,15 @@ class Loader: UIView {
     }
     
     func dismiss() {
+        isShowing = false
         UIView.animate(withDuration: 0.2, animations: {
             self.removeFromSuperview()
+            
         })
     }
     
     func show(controller:UIViewController) {
+        isShowing = true
         if #available(iOS 13.0, *) {
             spinner = UIActivityIndicatorView(style: .large)
         } else {
